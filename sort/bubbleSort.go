@@ -31,9 +31,9 @@ func bubbleSort(arr []int) {
 		return
 	}
 
-	for i := 0; i < length-1; i++ {
+	for i := 0; i < length-1; i++ { //6 个数 比较5趟
 		fmt.Println(i)
-		for j := 0; j < length-j-1; j++ {
+		for j := 0; j < length-i-1; j++ { //每趟从5次递减
 			if arr[j] > arr[j+1] {
 				arr[j], arr[j+1] = arr[j+1], arr[j]
 			}
